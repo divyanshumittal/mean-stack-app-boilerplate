@@ -1,0 +1,35 @@
+.user-dashboard {
+    height: 450px;
+}
+
+.user-dashboard-header {
+    text-align: center;
+    font-family: sans-serif;
+    color: #7b7b7b;
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+
+.user-dashboard .add-tile-spacing {
+    margin-bottom: 30px;
+}
+
+.user-dashboard .add-tile {
+    display: block;
+    width: 180px;
+    height: 100px;
+    padding: 25px;
+    border: solid 2px #6D1616;
+    text-align: center;
+}
+
+.user-dashboard .pull-right {
+    float: right;
+}
+
+.user-dashboard .add-hover-tile {
+    cursor: pointer;
+    background-color: #6D1616;
+    color: white;
+}

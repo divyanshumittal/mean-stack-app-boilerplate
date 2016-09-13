@@ -1,0 +1,72 @@
+<div timeout-watcher></div>
+<div default-container>
+    <div class="qualify-candidate">
+        <div class="col s12 qualify-candidate-header">QUALIFY H1-B CANDIDATE</div>
+        <div class="col s12">
+            <div ng-repeat="question in vm.questions"
+                 ng-class="{
+                 'qc-wrong': question.submittedAnswer != question.expectedAnswer && myForm.$dirty,
+                 'qc-right': question.submittedAnswer == question.expectedAnswer && myForm.$dirty}"
+                 style="margin-bottom: 10px;">
+                <form name="myForm">
+                    <div class="row">
+                        <div class="col s1 qc-line-height">
+                            <span class="glyphicon qc-v-align"
+                                  ng-class="{
+                                  'glyphicon-ok qc-color-ok': question.submittedAnswer == question.expectedAnswer && myForm.$dirty,
+                                  'glyphicon-remove qc-color-remove': question.submittedAnswer != question.expectedAnswer && myForm.$dirty}"></span>
+                        </div>
+                        <div class="col s7 qc-add-margin">
+                            <span>{{question.text}}</span>
+                        </div>
+                        <div class="col s2 qc-add-margin">
+                            <input id="no{{$index}}"
+                                   class="with-gap"
+                                   type="radio"
+                                   ng-model="question.submittedAnswer"
+                                   value="0"
+                                   ng-change='vm.checkValue($index)'/>
+                            <label for="no{{$index}}">NO</label>
+
+                        </div>
+                        <div class="col s2 qc-add-margin">
+                            <input id="yes{{$index}}"
+                                   type="radio"
+                                   class="with-gap"
+                                   ng-model="question.submittedAnswer"
+                                   value="1"
+                                   ng-change='vm.checkValue($index)'/>
+                            <label for="yes{{$index}}">YES</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col s12 qc-answer">
+            <div ng-if="!vm.isQualified"
+                 class="qc-color-remove">
+                <span class="glyphicon glyphicon-remove"></span> NOT QUALIFIED
+            </div>
+            <div ng-if="vm.isSureQualified"
+                 class="qc-color-ok">
+                <span class="glyphicon glyphicon-ok"></span> QUALIFIED
+            </div>
+        </div>
+        <div class="text-align-center">
+            <a type="submit"
+               href="#app/user-dashboard"
+               class="app btn btn-default">BACK TO MENU
+            </a>
+            <a ng-if="!vm.isQualified"
+               type="submit"
+               href="#app/qualify-candidate/contact-egen"
+               class="app btn btn-primary">CONTACT EGEN REP
+            </a>
+            <a ng-if="vm.isSureQualified"
+               type="submit"
+               href="#app/rate-calculator"
+               class="app btn btn-primary">RATE CALCULATOR
+            </a>
+        </div>
+    </div>
+</div>

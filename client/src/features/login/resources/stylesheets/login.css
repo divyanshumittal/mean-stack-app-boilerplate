@@ -1,0 +1,44 @@
+.login-container {
+    height: 500px;
+}
+
+.login-container input {
+    font-size: 16px;
+}
+
+.login-container label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.login-container label.active {
+    color: #6D1616
+}
+
+.login-container .padding-top-60 {
+    padding-top: 60px;
+}
+
+.login-container .login-body-location {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.login-container .login-glyph-dropdown {
+    position: absolute;
+    right: 5px;
+    top: 12px;
+}
+
+.login-container .login-answer {
+    text-align: center;
+    font-family: sans-serif;
+    color: #7b7b7b;
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.login-container .login-color-remove {
+    color: red;
+}

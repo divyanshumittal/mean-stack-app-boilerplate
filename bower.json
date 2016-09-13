@@ -1,0 +1,21 @@
+{
+  "name": "insight-global-egen",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "angular-ui-grid": "3.2.1",
+    "angular-bootstrap": "~2.1.3",
+    "angular-material": "~1.1.0",
+    "bootstrap": "~3.3.7",
+    "jquery": "~3.1.0",
+    "lodash": "~4.15.0",
+    "materialize": "~0.97.7",
+    "moment": "~2.14.1"
+  },
+  "resolutions": {
+    "angular": "1.5.8"
+  }
+}

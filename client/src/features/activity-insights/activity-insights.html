@@ -1,0 +1,53 @@
+<div class="admin-insights-container">
+    <nav class="row admin-nav">
+        <div class="nav-wrapper">
+            <ul class="left hide-on-med-and-down">
+                <div class="navbar-link-container">
+                    <li class="row"><a href="#app/admin/offers">Offers</a></li>
+                    <div class="row navbar-link-border"></div>
+                </div>
+                <div class="navbar-link-container navbar-link-selected">
+                    <li class="row"><a href="#app/admin/activity/logs">Activity</a></li>
+                    <div class="row navbar-link-border"></div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <div class="row search-container">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-8">
+            <div class='search-box'>
+                <form class='search-form'>
+                <span>
+                    <input class='form-control' ng-model="vm.search" ng-change="" placeholder='Search' type='text'>
+                </span>
+                </form>
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <div class="glyphicon glyphicon-stats selected"></div>
+            <a href="#app/admin/activity/logs">
+                <div class="glyphicon glyphicon-list-alt"></div>
+            </a>
+        </div>
+    </div>
+    <div class="row insights-graph">
+        <div class="number-of-logins col-xs-12">
+            <div class="number-of-logins-title">Number of Logins</div>
+            <div class="number-of-logins-value">{{vm.totalLogins | number:0}}</div>
+        </div>
+    </div>
+    <div class="row insights-grid-container">
+        <div class="col-xs-2"></div>
+        <div class="insights-grid-inner-container top-offices-grid col-xs-3 grid">
+            <div class="grid-title">TOP OFFICES</div>
+            <div id="top-offices-grid" ui-grid="vm.topOfficesGridOptions"></div>
+        </div>
+        <div class="col-xs-2"></div>
+        <div class="insights-grid-inner-container top-recruiters-grid col-xs-3 grid">
+            <div class="grid-title">TOP RECRUITERS</div>
+            <div id="top-recruiters-grid" ui-grid="vm.topRecruitersGridOptions"></div>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+</div>

@@ -1,0 +1,96 @@
+/*Styles for grid*/
+
+.insights-grid-inner-container {
+    margin-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    /*box-shadow: 2px 2px 2.7px 0.3px rgba(0, 0, 0, 0.25);*/
+}
+
+.insights-grid-container .ui-grid-top-panel {
+    border-radius: 0px;
+}
+
+#top-offices-grid, #top-recruiters-grid {
+    max-height: 200px;
+    overflow: scroll;
+    background-color: #fff;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.admin-insights-container .search-container {
+    margin-top: 70px;
+}
+
+.admin-insights-container .search-container .search-btn {
+    background-color: #fff;
+    border-radius: 5px 0px 0px 5px;
+    width: 2%;
+    border: none;
+    height: 34px;
+}
+
+.admin-insights-container .search-container input.form-control {
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    display: inline-block;
+    width: 100%;
+    height: 2rem;
+}
+
+.admin-insights-container .search-container .search-form {
+    height: 2rem;
+}
+
+.admin-insights-container .search-container .col-xs-10 {
+    padding: 0px;
+}
+
+.admin-insights-container .search-container .glyphicon {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    line-height: 1;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    background-color: #797879;
+    color: #fff;
+}
+
+.admin-insights-container .search-container .glyphicon.selected {
+    background-color: #6D1616;
+}
+
+.admin-insights-container .insights-grid-container .grid-title {
+    height: 35px;
+    line-height: 1;
+    background-color: #fff;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+    font-weight: 600;
+    color: #000;
+}
+
+.admin-insights-container .insights-graph {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.admin-insights-container .insights-graph .number-of-logins-title {
+    font-size: 17px;
+    color: #000;
+    font-weight: 600;
+}
+
+.admin-insights-container .insights-graph .number-of-logins-value {
+    font-size: 60px;
+    font-weight: 100;
+    color: #95989A;
+}
+
+

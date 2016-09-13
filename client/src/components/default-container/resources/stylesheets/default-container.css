@@ -1,0 +1,37 @@
+.default-container {
+    position: relative;
+    margin-top: 5em;
+    background-color: white;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.12);
+    padding: 35px;
+}
+
+.default-container .footer {
+    height: 40px;
+    padding: 2px 0;
+    position: absolute;
+    left: 35px;
+    bottom: 30px;
+    right: 35px;
+}
+
+.default-container .footer-text {
+    font-size: 12px;
+    color: #6D6E71;
+    font-weight: 500;
+    margin-left: 1px;
+    line-height: 1;
+    padding-bottom: 5px;
+}
+
+.default-container .footer-logo {
+    height: 36px;
+    width: 100px;
+}
+
+.default-container .footer-info {
+    text-align: right;
+    color: #6D1616;
+    margin-top: 20px;
+    line-height: 1;
+}

@@ -1,0 +1,29 @@
+.submit-offer {
+    height: 450px;
+}
+
+.submit-offer-header {
+    text-align: center;
+    font-family: sans-serif;
+    color: #7b7b7b;
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.submit-offer input {
+    font-size: 16px;
+}
+
+.submit-offer span {
+    font-size: 16px;
+}
+
+.submit-offer label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.submit-offer .row {
+    margin-bottom: 10px;
+}

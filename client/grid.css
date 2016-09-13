@@ -1,0 +1,93 @@
+.ui-grid-header-cell {
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+    border: none;
+}
+
+.ui-grid-header {
+    border: none;
+}
+
+.ui-grid-cell {
+    border: none;
+}
+
+.ui-grid-row {
+    background-color: #fff;
+}
+
+.ui-grid-top-panel {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.ui-grid {
+    border: none;
+}
+
+.ui-grid-row:nth-child(odd) .ui-grid-cell, .ui-grid-row:nth-child(even) .ui-grid-cell {
+    background-color: #fff;
+    border-top: 1px solid #CCCCCC !important;
+}
+
+.ui-grid-cell-contents {
+    padding-top: 25px;
+}
+
+.ui-grid-row .ui-grid-cell-contents {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1;
+    color: #000;
+    font-size: 13px;
+}
+
+.ui-grid-header-canvas {
+    background-color: #ffffff;
+}
+
+.ui-grid-pager-control button {
+    height: 10px;
+    min-width: 10px;
+    color: #fff;
+    background-color: #6D1616;
+    border-color: #6D1616;
+    border-radius: 0px;
+}
+
+.ui-grid-pager-control .first-triangle {
+    border-color: transparent #FFFFFF transparent transparent;
+}
+
+.ui-grid-pager-control .last-triangle {
+    border-color: transparent transparent transparent #FFFFFF;
+}
+
+.ui-grid-pager-control .first-bar, .ui-grid-pager-control .last-bar {
+    border-left: 2px solid #FFFFFF;
+}
+
+.ui-grid-pager-control button:disabled {
+    background-color: #797879;
+    border-color: #797879;
+    opacity: 1;
+}
+
+.ui-grid-pager-control input {
+    height: 12px;
+    width: 34px;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.ui-grid-pager-row-count-picker select {
+    height: 22px;
+    width: 45px;
+    font-size: 12px;
+}
+
+.ui-grid-pager-control .ui-grid-pager-max-pages-number {
+    vertical-align: inherit;
+    font-size: 12px;
+}

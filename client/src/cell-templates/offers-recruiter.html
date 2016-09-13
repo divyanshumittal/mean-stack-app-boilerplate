@@ -1,0 +1,9 @@
+<div data-toggle="tooltip" data-placement="top" title="{{row.entity.recruiterEmail}}">
+    <div class="ui-grid-cell-contents">
+        {{row.entity.recruiterEmail.split('@')[0].split('.')[0].substring(0,1).toUpperCase() +
+        row.entity.recruiterEmail.split('@')[0].split('.')[0].substring(1)}}
+        {{row.entity.recruiterEmail.split('@')[0].split('.')[1].substring(0,1).toUpperCase() +
+        row.entity.recruiterEmail.split('@')[0].split('.')[1].substring(1)}}
+    </div>
+</div>
+

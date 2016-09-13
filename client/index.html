@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="app" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="app" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Insight Global</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css">
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="src/features/login/resources/stylesheets/login.css">
+    <link rel="stylesheet" href="src/features/register/resources/stylesheets/register.css">
+    <link rel="stylesheet" href="src/features/user-dashboard/resources/stylesheets/user-dashboard.css">
+    <link rel="stylesheet" href="src/features/rate-calculator/resources/stylesheets/rate-calculator.css">
+    <link rel="stylesheet" href="src/features/submit-offer/resources/stylesheets/submit-offer.css">
+    <link rel="stylesheet" href="src/features/offers/resources/stylesheets/offers.css">
+    <link rel="stylesheet" href="src/features/benefits-package/resources/stylesheets/benefits-package.css">
+    <link rel="stylesheet" href="src/features/qualify-candidate/resources/stylesheets/qualify-candidate.css">
+    <link rel="stylesheet" href="src/features/qualify-candidate/contact-egen/resources/stylesheets/contact-egen.css">
+    <link rel="stylesheet" href="src/features/activity-logs/resources/stylesheets/activity-logs.css">
+    <link rel="stylesheet" href="src/features/activity-insights/resources/stylesheets/activity-insights.css">
+    <link rel="stylesheet" href="src/components/default-container/resources/stylesheets/default-container.css">
+    <link rel="stylesheet" href="admin-nav.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Insight Global" src="assets/images/ig.png" class="navbar-logo">
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-view></div>
+
+
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/materialize/dist/js/materialize.js"></script>
+<script src="bower_components/angular-ui-grid/ui-grid.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="app.js"></script>
+<script src="src/components/utility-services/utility.module.js"></script>
+<script src="src/components/utility-services/utility.service.js"></script>
+<script src="src/components/timeout-watcher/timeoutWatcher.module.js"></script>
+<script src="src/components/timeout-watcher/timeoutWatcher.directive.js"></script>
+<script src="src/components/timeout-watcher/timeoutWatcher.controller.js"></script>
+<script src="src/features/login/login.module.js"></script>
+<script src="src/features/login/login.controller.js"></script>
+<script src="src/features/register/register.module.js"></script>
+<script src="src/features/register/register.controller.js"></script>
+<script src="src/components/default-container/default-container.module.js"></script>
+<script src="src/components/default-container/default-container.directive.js"></script>
+<script src="src/components/default-container/default-container.controller.js"></script>
+<script src="src/features/user-dashboard/user-dashboard.module.js"></script>
+<script src="src/features/user-dashboard/user-dashboard.controller.js"></script>
+<script src="src/features/qualify-candidate/qualify-candidate.module.js"></script>
+<script src="src/features/qualify-candidate/qualify-candidate.controller.js"></script>
+<script src="src/features/submit-offer/submit-offer.module.js"></script>
+<script src="src/features/submit-offer/submit-offer.controller.js"></script>
+<script src="src/features/benefits-package/benefits-package.module.js"></script>
+<script src="src/features/benefits-package/benefits-package.controller.js"></script>
+<script src="src/features/rate-calculator/rate-calculator.module.js"></script>
+<script src="src/features/rate-calculator/rate-calculator.controller.js"></script>
+<script src="src/features/offers/offers.module.js"></script>
+<script src="src/features/offers/offers.controller.js"></script>
+<script src="src/features/activity-logs/activity-logs.module.js"></script>
+<script src="src/features/activity-logs/activity-logs.controller.js"></script>
+<script src="src/features/activity-insights/activity-insights.module.js"></script>
+<script src="src/features/activity-insights/activity-insights.controller.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.benefits-package {
+    height: 450px;
+}
+
+.benefits-package-header {
+    text-align: center;
+    font-family: sans-serif;
+    color: #7b7b7b;
+    font-size: 21px;
+    font-weight: 300;
+    padding-bottom: 35px;
+}
+
+.benefits-package input {
+    font-size: 16px;
+}
+
+.benefits-package span {
+    font-size: 16px;
+}
+
+.benefits-package label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.benefits-package textarea {
+    margin-bottom: 0;
+    height: 90px;
+}

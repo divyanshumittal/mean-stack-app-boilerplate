@@ -1,0 +1,41 @@
+<div class="admin-logs-container">
+    <nav class="row admin-nav">
+        <div class="nav-wrapper">
+            <ul class="left hide-on-med-and-down">
+                <div class="navbar-link-container">
+                    <li class="row"><a href="#app/admin/offers">Offers</a></li>
+                    <div class="row navbar-link-border"></div>
+                </div>
+                <div class="navbar-link-container navbar-link-selected">
+                    <li class="row"><a href="#app/admin/activity/logs">Activity</a></li>
+                    <div class="row navbar-link-border"></div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <div class="row search-container">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-8">
+            <div class='search-box'>
+                <form class='search-form'>
+                <span>
+                    <input class='form-control' ng-model="vm.search" ng-change="vm.filterLoginData();" placeholder='Search' type='text'>
+                </span>
+                </form>
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <a href="#app/admin/activity/insights">
+                <div class="glyphicon glyphicon-stats"></div>
+            </a>
+            <div class="glyphicon glyphicon-list-alt selected"></div>
+        </div>
+    </div>
+    <div class="row logs-grid-container">
+        <div class="col-xs-3"></div>
+        <div class="logs-grid-inner-container col-xs-6 grid">
+            <div id="logs-grid" ui-grid="vm.gridOptions" ui-grid-pagination></div>
+        </div>
+        <div class="col-xs-3"></div>
+    </div>
+</div>

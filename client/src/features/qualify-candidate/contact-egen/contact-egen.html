@@ -1,0 +1,46 @@
+<div default-container>
+    <div class="contact-egen">
+        <div class="col s12 contact-egen-header">QUALIFY H1-B CANDIDATE</div>
+        <div class="row">
+            <div class="col s6">
+                <div class="form-group input-field">
+                    <input type="text"
+                           class="form-control"
+                           id="name"
+                           ng-model="vm.candidateName">
+                    <label for="name">Candidate Name</label>
+                </div>
+            </div>
+            <div class="col s6 input-field">
+                <input type="text"
+                       class="form-control"
+                       id="email"
+                       ng-model="vm.candidateEmail">
+                <label for="email">Candidate email (optional)</label>
+            </div>
+        </div>
+        <div class="col s12 input-field">
+            <div class="form-group">
+                <textarea id="message"
+                          ng-model="vm.message"
+                          maxlength="320"
+                          row="3"
+                          class="materialize-textarea"></textarea>
+                <label for="message">Custom message</label>
+            </div>
+            <div class="float-right">
+                <small class="dark-red">{{320 - vm.message.length}}/320</small>
+            </div>
+        </div>
+        <div class="col s12 margin-top-25 text-align-center">
+            <a type="submit"
+               href="#app/user-dashboard"
+               class="app btn btn-default">BACK TO MENU
+            </a>
+            <button type="submit"
+                    ng-click="vm.send()"
+                    class="app btn btn-primary">SEND
+            </button>
+        </div>
+    </div>
+</div>

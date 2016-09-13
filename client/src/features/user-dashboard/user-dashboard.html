@@ -1,0 +1,16 @@
+<div timeout-watcher></div>
+<div default-container>
+    <div class="user-dashboard">
+        <div class="col s12 user-dashboard-header">What would you like to do?</div>
+        <div ng-repeat="data in vm.tiles"
+             class="col s6 add-tile-spacing">
+            <div ng-mouseover="vm.hoverInTile(data)"
+                 ng-mouseleave="vm.hoverOutTile(data)"
+                 ng-click="vm.go(data)"
+                 class="add-tile"
+                 ng-class="{'pull-right': ($index%2 === 0), 'add-hover-tile': data.hover}">
+                {{data.tileName}}
+            </div>
+        </div>
+    </div>
+</div>

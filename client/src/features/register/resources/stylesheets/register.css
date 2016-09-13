@@ -1,0 +1,40 @@
+.register-container {
+    height: 500px;
+}
+
+.register-container input {
+    font-size: 16px;
+}
+
+.register-container label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.register-container label.active {
+    color: #6D1616
+}
+
+.register-container .register-body-location {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.register-container .register-glyph-dropdown {
+    position: absolute;
+    right: 5px;
+    top: 12px;
+}
+
+.register-answer {
+    text-align: center;
+    font-family: sans-serif;
+    color: #7b7b7b;
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.register-color-remove {
+    color: red;
+}

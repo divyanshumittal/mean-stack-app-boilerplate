@@ -1,0 +1,32 @@
+.contact-egen {
+    height: 450px;
+}
+
+.contact-egen-header {
+    text-align: center;
+    font-family: sans-serif;
+    color: #7b7b7b;
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+
+.contact-egen label {
+    font-weight: 400;
+}
+
+.contact-egen form span {
+    font-size: 16px;
+}
+
+.contact-egen textarea {
+    margin-bottom: 0;
+}
+
+.contact-egen .form-group {
+    margin-bottom: 0;
+}
+
+.dark-red {
+    color: #6D1616;
+}

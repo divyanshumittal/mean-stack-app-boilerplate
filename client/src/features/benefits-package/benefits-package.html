@@ -1,0 +1,41 @@
+<div timeout-watcher></div>
+<div default-container>
+    <div class="benefits-package">
+        <div class="col s12 benefits-package-header">SEND BENEFITS PACKAGE</div>
+        <div class="col s12">
+            <form name="sendForm">
+                <div class="row padding-top-50">
+                    <div class="row">
+                        <div class="col s2"></div>
+                        <div class="col s8">
+                            <div class="input-field col s12">
+                                <input type="text"
+                                       class="form-control"
+                                       id="name"
+                                       ng-model="vm.candidateName">
+                                <label for="name">Candidate name</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input type="email"
+                                       class="form-control"
+                                       id="email"
+                                       ng-model="vm.candidateEmail">
+                                <label for="email">Candidate email</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col s12 margin-top-25 text-align-center">
+            <a type="submit"
+               href="#app/user-dashboard"
+               class="app btn btn-default">BACK TO MENU
+            </a>
+            <button type="submit"
+                    ng-click="vm.send()"
+                    class="app btn btn-primary">SEND
+            </button>
+        </div>
+    </div>
+</div>

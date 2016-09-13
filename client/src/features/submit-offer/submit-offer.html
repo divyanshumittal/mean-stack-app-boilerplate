@@ -1,0 +1,78 @@
+<div timeout-watcher></div>
+<div default-container>
+    <div class="submit-offer">
+        <div class="col s12 submit-offer-header">SUBMIT OFFER NOTIFICATION</div>
+        <div class="col s12">
+            <form name="userForm">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input type="text"
+                               class="form-control no-margin"
+                               id="candidate_name"
+                               ng-model="user.name">
+                        <label for="candidate_name">Candidate Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="date"
+                               class="form-control no-margin"
+                               ng-model="user.startDate"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input type="text"
+                               class="form-control no-margin"
+                               id="client_name"
+                               ng-model="user.clientName">
+                        <label for="client_name">Client Name</label>
+                    </div>
+                    <div class="col s6 margin-top-35">
+                        <div class="col s7" style="padding: 0;">
+                            <span>Contract at least 6 months</span>
+                        </div>
+                        <div class="col s5" style="padding: 0;">
+                            <div class="switch">
+                                <label>
+                                    <span>NO</span>
+                                    <input type="checkbox"
+                                           ng-model="user.isSixMonthsOrMore"/>
+                                    <span class="lever"></span>
+                                    <span>YES</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input type="text"
+                               class="form-control no-margin"
+                               id="candidate_rate"
+                               ng-model="user.payRate">
+                        <label for="candidate_rate">Candidate Pay Rate</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text"
+                               class="form-control no-margin"
+                               id="egen_rate"
+                               ng-model="user.billRate">
+                        <label for="egen_rate">Egen Bill Rate</label>
+                    </div>
+                </div>
+                <div class="col s12 margin-top-35">
+                    <div class="text-align-center">
+                        <a type="submit"
+                           href="#app/user-dashboard"
+                           class="app btn btn-default">BACK TO MENU
+                        </a>
+                        <a type="submit"
+                           href="#app/user-dashboard"
+                           ng-click="vm.update(user)"
+                           class="app btn btn-primary">SUBMIT
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

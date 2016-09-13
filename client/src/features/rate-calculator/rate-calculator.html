@@ -1,0 +1,55 @@
+<div timeout-watcher></div>
+<div default-container>
+    <div class="rate-calculator">
+        <div class="col s12 rate-calculator-header">RATE CALCULATOR</div>
+        <div class="col s12 margin-top-25">
+            <form name="rateForm">
+                <div class="row padding-top-50">
+                    <div class="row padding-bottom-20">
+                        <div class="col s6">
+                            <div class="input-field col s12">
+                                <input type="number"
+                                       class="form-control"
+                                       id="bill_rate"
+                                       ng-model="vm.baseRate"
+                                       ng-change="vm.calculateRate()">
+                                <label for="bill_rate">Candidate Pay Rate</label>
+                            </div>
+                            <div class="col s12 rate-calculator-relocation">
+                                <div class="col s7" style="padding: 0;">
+                                    <span>Provide Relocation</span>
+                                </div>
+                                <div class="col s5" style="padding: 0;">
+                                    <div class="switch">
+                                        <label>
+                                            <span>NO</span>
+                                            <input type="checkbox"
+                                                   ng-model="vm.isRelocationNeeded"
+                                                   ng-change="vm.calculateRate()"/>
+                                            <span class="lever"></span>
+                                            <span>YES</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <div class="rate-calculator-cost">
+                                <h2 class="no-margin text-center">{{(vm.finalRate || 0) | currency:'$'}}
+                                    /Hour</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 margin-top-25">
+                        <div class="text-align-center">
+                            <a type="submit"
+                               href="#app/user-dashboard"
+                               class="app btn btn-default">BACK TO MENU
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+<div default-container>
+    <div class="login-container">
+        <form autocomplete="on">
+            <div class="row">
+                <div class="col s2"></div>
+                <div class="col s8 padding-top-60">
+                    <div class="col s3"></div>
+                    <div class="form-group input-field margin-bottom-50">
+                        <input type="text"
+                               ng-model="vm.emailAdd"
+                               class="form-control"
+                               ng-change="vm.hideUserMessage()"
+                               id="email"
+                               autocomplete="on">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group input-field margin-bottom-50">
+                        <input type="password"
+                               ng-model="vm.password"
+                               ng-change="vm.hideUserMessage()"
+                               class="form-control"
+                               id="password"
+                               name="password"
+                               autocomplete="on">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="form-group input-field login-body-location">
+                        <input type="text"
+                               id="location"
+                               ng-model="vm.selected"
+                               uib-typeahead="state for state in vm.utilityService.states | filter:$viewValue | limitTo:8"
+                               class="form-control"
+                               autocomplete="off">
+                        <label for="location">Location</label>
+                        <span class="glyphicon glyphicon-triangle-bottom login-glyph-dropdown"></span>
+                    </div>
+                    <div class="col s12 login-answer">
+                        <div ng-if="vm.userMessageDisplay"
+                             class="login-color-remove">
+                            <span class="glyphicon glyphicon-remove"></span> {{vm.userMessage}}
+                        </div>
+                    </div>
+                    <div class="text-align-center">
+                        <input type="submit"
+                               value="Login"
+                               ng-click="vm.loginUser()"
+                               class="btn btn-primary">
+                        </input>
+                        <a type="submit"
+                           href="#app/register"
+                           class="btn btn-primary">Register
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

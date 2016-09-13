@@ -1,0 +1,63 @@
+.qualify-candidate {
+    height: 450px;
+}
+
+.qualify-candidate-header {
+    text-align: center;
+    font-family: sans-serif;
+    color: #7b7b7b;
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+
+.qualify-candidate label {
+    font-weight: 400;
+}
+
+.qualify-candidate form span {
+    font-size: 16px;
+}
+
+.qc-answer {
+    text-align: center;
+    font-family: sans-serif;
+    color: #7b7b7b;
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.qc-right {
+    transition:all 0.5s;
+    background-color: lightgreen;
+}
+
+.qc-wrong {
+    transition:all 0.5s;
+    background-color: pink;
+}
+
+.qc-color-ok {
+    color: green;
+}
+
+.qc-color-remove {
+    color: red;
+}
+
+.qc-line-height {
+    line-height: 30px;
+}
+
+.qc-v-align {
+    vertical-align: middle;
+}
+
+.qc-add-margin {
+    margin-top: 5px;
+}
+
+.dark-red {
+    color: #6D1616;
+}
