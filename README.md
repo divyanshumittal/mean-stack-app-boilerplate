@@ -1,6 +1,3 @@
-# Insight
-insight.egen.io
-
 ## Prerequisites
 
 1\. Install [Node.js](http://nodejs.org). You should have the latest node and npm versions or you will get an npm error. 
